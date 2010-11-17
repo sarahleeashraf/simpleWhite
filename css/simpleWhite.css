@@ -1,0 +1,181 @@
+/* -----------------------------------------------------------------------------
+
+	sarahashraf.css
+	* created by Sarah Ashraf Nov 4, 2010
+	* last edited by Sarah Ashraf Nov 16, 2010
+	
+----------------------------------------------------------------------------- */
+
+/* This sheet contains rules for: */
+
+/* 00= UTILITY */
+/* 01= GENERAL LAYOUT */
+/* 02= HEADER AND NAVIGATION */
+/* 03= BLOG */
+/* 04= BIO */
+/* 05= FIND ME */
+/* 06= FOOTER */
+
+
+/* 00= UTILITY -------------------------------------------------------------- */
+
+a {color: #09C; text-decoration: none;}
+a:visited { color: #069}
+a:hover {color: #0CF; text-decoration: underline}
+
+ul.links li { padding-left: 0;}
+
+/* 01= GENERAL LAYOUT ------------------------------------------------------- */
+body {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	padding: 20px;
+}
+
+
+/* 02= HEADER AND NAVIGATION ------------------------------------------------ */
+
+#header {
+	height: 40px;
+	overflow: hidden;
+	position: relative;
+	margin-bottom: 60px;
+}
+	#header h2 {
+		margin: 16px 0 0 0;
+		background: url(../images/hdr_sarahashraf.gif) left top no-repeat;
+		height: 25px;
+		width: 296px;
+	}
+	
+	#header h2 a {
+		font-size: 1px;
+		height: 0;
+		padding-top: 25px;
+		font-size: 1px;
+		display: block;
+		overflow: hidden;
+	}
+
+
+#nav {
+	list-style: none;
+	padding: 0;
+	margin: 28px 0 0 58px;
+	overflow: hidden;
+}
+
+	#nav li { 
+		float: left;
+		margin-right: 51px;
+	}
+	
+	#nav li a {
+		display: block;
+		height: 0;
+		padding-top: 13px;
+		font-size: 1px;
+		overflow: hidden;
+		background-position: left top;
+		background-repeat: no-repeat;
+	}
+	
+	#nav li a:hover { background-position: right top; }
+	
+	#nav li.last { margin-right: 0;}
+	
+	#nav a[href*="resume"]{
+		width: 75px;
+		background-image: url(../images/nav_resume.gif);
+	}
+	
+	#nav a[href*="portfolio"]{
+		width: 104px;
+		background-image: url(../images/nav_portfolio.gif);
+	}
+	
+	#nav a[href*="contact"]{
+		width: 89px;
+		background-image: url(../images/nav_contact.gif);
+	}
+	
+	#nav a[href*="blog"]{
+		width: 51px;
+		background-image: url(../images/nav_blog.gif);
+	}
+	
+
+/* 03= BLOG ------------------------------------------------------------ */
+
+.blogPost {
+	margin-bottom: 4em;
+	float: left;	
+	padding-bottom: 2em;
+	border-bottom: 3px dotted #666;
+}
+
+	.blogPost .details { margin-top: 3em}
+	.blogPost .details p { margin-bottom: .5em; }
+	.blogPost h3 { font-weight: bold;}
+	
+	.blogNav { margin-bottom: 4em;}
+	.blogNav .newer { text-align: right;}
+
+/* 03= BIO ------------------------------------------------------------------ */
+
+/* 04= BLOCKMOD ------------------------------------------------------------- */
+
+.blockMod { margin-bottom: 4em;}
+
+	.blockMod h3 {
+		display: block;
+		font-size: 1px;
+		overflow: hidden;
+		padding-top: 14px;
+		margin-bottom: 10px;
+		height: 0;
+	}
+	
+	
+	#search h3 { background: url(../images/hdr_search.gif) left top no-repeat;}
+	#find-me h3 { background: url(../images/hdr_find.gif) left top no-repeat;}
+	#new-portfolio h3 { background: url(../images/hdr_whats_new.gif) left top no-repeat;}
+	#blog-topics h3 { background: url(../images/hdr_blog_topics.gif) left top no-repeat;}
+	#blog-archive h3 { background: url(../images/hdr_blog_archive.gif) left top no-repeat;}
+
+/* 05= FIND ME -------------------------------------------------------------- */
+
+#find-me ul { 
+	list-style: none; 
+	padding: 0; 
+	margin: 0;
+}
+
+	#find-me li { padding-left: 24px; margin-bottom: .5em;}
+	
+	#find-me .rss { background: url(../images/ico_rss.gif) left center no-repeat;}
+	#find-me .linkedin { background: url(../images/ico_linkedin.gif) left center no-repeat;}
+	#find-me .twitter { background: url(../images/ico_twitter.gif) left center no-repeat;}
+
+/* 06= FOOTER --------------------------------------------------------------- */
+
+#footer { 
+	color: #666; 
+	text-align: right; 
+	border-top: 3px dotted #ccc;
+	padding-top: 1em;
+}
+
+/* 07= TAXONOMY PAGE -------------------------------------------------------- */
+
+.view-taxonomy-term ul {
+	list-style: none;
+	margin: 0;
+	padding: 0 0 1.5em 0;	
+}
+	.view-taxonomy-term ul li {
+	
+		list-style: none;
+		margin: 0;
+	}
+	
+	
