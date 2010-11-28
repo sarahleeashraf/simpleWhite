@@ -150,11 +150,12 @@ body {
 	}
 	
 	
-	#search h3 { background: url(../images/hdr_search.gif) left top no-repeat;}
+	#search-box h3 { background: url(../images/hdr_search.gif) left top no-repeat;}
 	#find-me h3 { background: url(../images/hdr_find.gif) left top no-repeat;}
 	#new-portfolio h3 { background: url(../images/hdr_whats_new.gif) left top no-repeat;}
 	#blog-topics h3 { background: url(../images/hdr_blog_topics.gif) left top no-repeat;}
 	#blog-archive h3 { background: url(../images/hdr_blog_archive.gif) left top no-repeat;}
+	
 
 /* 05= FIND ME -------------------------------------------------------------- */
 
