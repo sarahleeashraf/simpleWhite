@@ -23,7 +23,16 @@ a {color: #09C; text-decoration: none;}
 a:visited { color: #069}
 a:hover {color: #0CF; text-decoration: underline}
 
-ul.links li { padding-left: 0;}
+ul.links li { padding-left: 0; color: #ccc; }
+
+.headers { 
+	font-weight: bold; 
+	text-align: right; 
+	text-transform: uppercase;
+}
+
+.headers h5 { color: #666;}
+.information { margin-bottom: 2em;}
 
 /* 01= GENERAL LAYOUT ------------------------------------------------------- */
 body {
