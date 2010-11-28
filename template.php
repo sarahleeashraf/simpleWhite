@@ -245,4 +245,33 @@ function simpleWhite_id_safe($string) { //change mytheme to your theme name
   return strtolower(preg_replace('/[^a-zA-Z0-9-]+/', '-', $string));
 }
 
+/**
+* PULLS MY TWITTER FEED. This needs to be turned into a module that makes a block
+*/
 
+function twitter()
+{
+	$ch = curl_init();
+	curl_setopt($ch, CURLOPT_URL, 'http://api.twitter.com/1/statuses/user_timeline.json?screen_name=sarahleeashraf&count=5');
+	curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+	$json_vars = curl_exec($ch);
+	curl_close($ch);
+	
+	$timeline = json_decode($json_vars);
+	
+	$tweets = '<ul>';
+	
+	foreach ($timeline as $tweet)
+	{
+	
+		$tweets .= '<li><p>';
+		$tweets .= $tweet->text . '<br />';
+		$tweets .= '<span class=\'small\'>';
+		$tweets .= '<a href=\'http://www.twitter.com/sarahleeashraf/status/' . $tweet->id . '/\'>' . $tweet->created_at . '</a></span></p>';
+		$tweets .= '</li>';
+	}
+	
+	$tweets .= '</ul>';
+	
+	return $tweets;
+}

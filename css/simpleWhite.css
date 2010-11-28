@@ -15,7 +15,8 @@
 /* 04= BIO */
 /* 05= FIND ME */
 /* 06= FOOTER */
-
+/* 07= TAXONOMY PAGE */
+/* 08= HOME PAGE */
 
 /* 00= UTILITY -------------------------------------------------------------- */
 
@@ -156,6 +157,18 @@ body {
 	#blog-topics h3 { background: url(../images/hdr_blog_topics.gif) left top no-repeat;}
 	#blog-archive h3 { background: url(../images/hdr_blog_archive.gif) left top no-repeat;}
 	
+	/* homepage */
+	
+	.front .blockMod h3 { 
+		background-image: url(../images/homepage_header.gif); 
+		background-repeat: no-repeat;
+	}
+	
+	
+	#blog h3 {background-position: 0 0; width: 51px;}
+	#projects h3 {background-position: -51px 0; width: 93px;}
+	#right-now h3 { background-position: -144px 0; width: 109px;}
+	#elsewhere h3 { background-position: -253px 0; width: 113px;}
 
 /* 05= FIND ME -------------------------------------------------------------- */
 
@@ -193,4 +206,18 @@ body {
 		margin: 0;
 	}
 	
-	
+/* 08= HOME PAGE ------------------------------------------------------------ */
+
+.front .blockMod { margin-bottom: 1.5em;}
+
+#mission{
+	border-top: 3px dotted #ccc;
+	border-bottom: 3px dotted #ccc;
+	padding: 10px 0;
+	margin-bottom: 4em;
+}
+
+	#mission h2 { margin-top: 30px}
+
+#right-now ul { list-style: none; margin: 0 0 1.5em 0; padding: 0;}
+
