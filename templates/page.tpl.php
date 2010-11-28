@@ -168,7 +168,10 @@
 			<?php print $sidebar_first; ?>
 			
 			<?php if ($search_box): ?>
-				<div id="search-box" class="span-6 blockMod"><?php print $search_box; ?></div>
+				<div id="search-box" class="span-6 blockMod">
+					<h3>Search my blog</h3>
+					<?php print $search_box; ?>
+				</div>
 			<?php endif; ?>
 			
 			<?php print $sidebar_second; ?>
