@@ -69,7 +69,7 @@ body {
 #nav {
 	list-style: none;
 	padding: 0;
-	margin: 28px 0 0 58px;
+	margin: 28px 0 0 70px;
 	overflow: hidden;
 }
 
@@ -84,33 +84,38 @@ body {
 		padding-top: 13px;
 		font-size: 1px;
 		overflow: hidden;
-		background-position: left top;
-		background-repeat: no-repeat;
+		background-repeat: repeat;
 	}
 	
-	#nav li a:hover { background-position: right top; }
 	
 	#nav li.last { margin-right: 0;}
 	
 	#nav a[href*="resume"]{
 		width: 75px;
-		background-image: url(../images/nav_resume.gif);
+		background-position: 0 0;
+		background-image: url(../images/navigation.gif);
 	}
+
+	#nav a.active[href*="resume"],
+	#nav a[href*="resume"]:hover { background-position: 0 -13px; }
 	
-	#nav a[href*="portfolio"]{
-		width: 104px;
-		background-image: url(../images/nav_portfolio.gif);
-	}
-	
-	#nav a[href*="contact"]{
-		width: 89px;
-		background-image: url(../images/nav_contact.gif);
-	}
+	#nav a[href*="projects"] {
+		width: 92px;
+		background-position: -75px 0;
+		background-image: url(../images/navigation.gif);
+	}	
+
+	#nav a.active[href*="projects"],
+	#nav a[href*="projects"]:hover { background-position: -75px -13px; }
 	
 	#nav a[href*="blog"]{
 		width: 51px;
-		background-image: url(../images/nav_blog.gif);
+		background-position: -167px 0;
+		background-image: url(../images/navigation.gif);
 	}
+
+	#nav a.active[href*="blog"],
+	#nav a[href*="blog"]:hover { background-position: -167px -13px; }
 	
 
 /* 03= BLOG ------------------------------------------------------------ */
