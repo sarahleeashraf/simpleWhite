@@ -52,7 +52,10 @@ conditional-stylesheets[if lte IE 6][all][] = css/ie6.css
   ; page.tpl.php template.
 regions[sidebar_first]  = First sidebar
 regions[sidebar_second] = Second sidebar
-regions[content_top]    = Content top
+regions[home_first]     = First column on homepage
+regions[home_second]    = Second column on homepage
+regions[home_third]     = Third column on homepage
+regions[home_fourth]    = Fourth column on homepage
 regions[content_bottom] = Content bottom
 regions[header]         = Header
 regions[footer]         = Footer
