@@ -53,7 +53,7 @@
  * @see zen_process()
  */
 ?>
-<div id="<?php print $block_cssid; ?>" class="blockMod span-6">
+<div <?php if ($block_cssid != "-none-"): ?>id="<?php print $block_cssid; ?>"<?php endif; ?> class="blockMod span-6">
   <?php if ($title): ?>
     <h3 class="title"><?php print $title; ?></h3>
   <?php endif; ?>
