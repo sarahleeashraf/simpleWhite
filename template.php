@@ -183,7 +183,7 @@ function simpleWhite_preprocess_node(&$vars) {
 	
 	
 	//print_r($vars);
-	if ($vars['node']->taxonomy && $vars['type']=="blog")
+	if ($vars['node']->taxonomy && ($vars['type']=="blog" || $vars['type']=="project"))
 	{
 		// iterate through the terms
 		foreach($vars['node']->taxonomy as $term)

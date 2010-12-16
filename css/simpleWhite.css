@@ -121,6 +121,7 @@ body {
 	
 
 /* 03= BLOG ------------------------------------------------------------ */
+/* also used for project */
 
 .blogPost {
 	margin-bottom: 4em;
@@ -135,6 +136,14 @@ body {
 	
 	.blogNav { margin-bottom: 4em;}
 	.blogNav .newer { text-align: right;}
+	
+	body.node-type-project .blogPost .details,
+	body.node-type-blog .blogPost .details{
+		margin-top: 0;
+	}
+	
+	body.node-type-project .blogPost,
+	body.node-type-blog .blogPost { border-bottom: 0;}
 
 /* 03= BIO ------------------------------------------------------------------ */
 

@@ -134,7 +134,7 @@
 	</div><!-- end header -->
 	<div id="content" class="container">
 		<div id="mission" class="span-24 last">
-			<div class="span-6"><img src="/~sarah/drupal/sites/all/themes/simpleWhite/images/homepage_sarah.jpg" /></div>
+			<div class="span-6"><img src="/sites/all/themes/simpleWhite/images/homepage_sarah.jpg" /></div>
 			<div class="span-18 last"><h2><?php print $mission; ?></h2></div>
 		</div>
 		

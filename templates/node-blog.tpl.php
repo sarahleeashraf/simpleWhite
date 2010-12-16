@@ -73,7 +73,7 @@
  * @see zen_process()
  */
 ?>
-<div id="node-<?php print $node->nid; ?>" class="blogPost span-17<?php print $classes; ?> clearfix">
+<div id="node-<?php print $node->nid; ?>" class="blogPost span-17 <?php print $classes; ?> clearfix">
   <?php/* print $user_picture; */?>
   
   <div class="details span-4">
